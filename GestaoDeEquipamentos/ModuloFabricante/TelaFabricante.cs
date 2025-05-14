@@ -4,8 +4,12 @@ namespace GestaoDeEquipamentos.ConsoleApp.ModuloFabricante;
 
 public class TelaFabricante
 {
-    public RepositorioFabricante repositorioFabricante;
+    private RepositorioFabricante repositorioFabricante;
 
+    public TelaFabricante(RepositorioFabricante repositorioFabricante)
+    {
+        this.repositorioFabricante = repositorioFabricante;
+    }
     public void ExibirCabecalho()
     {
         Console.Clear();
@@ -134,10 +138,7 @@ public class TelaFabricante
         Console.Write("Digite o telefone do fabricante: ");
         string telefone = Console.ReadLine();
 
-        Fabricante fabricante = new Fabricante();
-        fabricante.nome = nome;
-        fabricante.email = email;
-        fabricante.telefone = telefone;
+        Fabricante fabricante = new Fabricante(nome, email, telefone);
 
         return fabricante;
     }
