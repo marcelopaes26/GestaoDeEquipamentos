@@ -1,3 +1,4 @@
+using GestaoDeEquipamentos.ConsoleApp.Compartilhado;
 using GestaoDeEquipamentos.ConsoleApp.ModuloEquipamento;
 
 namespace GestaoDeEquipamentos.ConsoleApp.ModuloChamado;
@@ -40,11 +41,11 @@ public class TelaChamado
 
         Console.WriteLine();
 
-        Chamado chamado = ObterDados();
+        Chamado novoChamado = ObterDados();
 
-        repositorioChamado.CadastrarChamado(chamado);
+        repositorioChamado.CadastrarRegistro(novoChamado);
 
-        Console.WriteLine($"\nChamado \"{chamado.titulo}\" cadastrado com sucesso!");
+        Console.WriteLine($"\nChamado \"{novoChamado.titulo}\" cadastrado com sucesso!");
         Console.ReadLine();
     }
 
@@ -65,7 +66,7 @@ public class TelaChamado
 
         Chamado chamadoAtualizado = ObterDados();
 
-        bool conseguiuEditar = repositorioChamado.EditarChamado(idSelecionado, chamadoAtualizado);
+        bool conseguiuEditar = repositorioChamado.EditarRegistro(idSelecionado, chamadoAtualizado);
 
         if (!conseguiuEditar)
         {
@@ -94,7 +95,7 @@ public class TelaChamado
 
         Console.WriteLine();
 
-        bool conseguiuExcluir = repositorioChamado.ExcluirChamado(idSelecionado);
+        bool conseguiuExcluir = repositorioChamado.ExcluirRegistro(idSelecionado);
 
         if (!conseguiuExcluir)
         {
@@ -122,11 +123,11 @@ public class TelaChamado
             "Id", "Título", "Descrição", "Data de Abertura", "Equipamento"
         );
 
-        Chamado[] chamados = repositorioChamado.SelecionarChamados();
+        EntidadeBase[] chamados = repositorioChamado.SelecionarRegistros();
 
         for (int i = 0; i < chamados.Length; i++)
         {
-            Chamado c = chamados[i];
+            Chamado c = (Chamado)chamados[i];
 
             if (c == null)
                 continue;
@@ -155,7 +156,7 @@ public class TelaChamado
         Console.Write("Digite o ID do equipamento que deseja selecionar: ");
         int idEquipamento = Convert.ToInt32(Console.ReadLine());
 
-        Equipamento equipamentoSelecionado = repositorioEquipamento.SelecionarEquipamentoPorId(idEquipamento);
+        Equipamento equipamentoSelecionado = (Equipamento)repositorioEquipamento.SelecionarRegistroPorId(idEquipamento);
 
         Chamado chamado = new Chamado();
         chamado.titulo = titulo;
@@ -179,11 +180,11 @@ public class TelaChamado
             "Id", "Nome", "Preço Aquisição", "Número Série", "Fabricante", "Data Fabricação"
         );
 
-        Equipamento[] equipamentos = repositorioEquipamento.SelecionarEquipamentos();
+        EntidadeBase[] equipamentos = repositorioEquipamento.SelecionarRegistros();
 
         for (int i = 0; i < equipamentos.Length; i++)
         {
-            Equipamento e = equipamentos[i];
+            Equipamento e = (Equipamento)equipamentos[i];
 
             if (e == null)
                 continue;
