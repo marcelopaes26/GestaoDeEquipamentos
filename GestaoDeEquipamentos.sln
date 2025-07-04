@@ -3,20 +3,36 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoDeEquipamentos", "GestaoDeEquipamentos\GestaoDeEquipamentos.csproj", "{4FED634C-5911-457C-B9BB-167547E46DB6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Apresentação", "1. Apresentação", "{5CE335C2-D754-046B-83EC-6C4A18029330}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Domínio", "2. Domínio", "{FFA71E88-89B1-1937-D83D-0FD0D35D6019}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Infraestrutura", "3. Infraestrutura", "{902C5020-ED5E-36B7-676D-3CA3BD53E0D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoDeEquipamentos", "GestaoDeEquipamentos\GestaoDeEquipamentos.csproj", "{0A0149F5-8983-4FA9-AF6C-19349EE65CEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoDeEquipamentos.Dominio", "2. Domínio\GestaoDeEquipamentos\GestaoDeEquipamentos.Dominio.csproj", "{D27776D8-4034-45C6-92A0-C02CDE886A15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A0149F5-8983-4FA9-AF6C-19349EE65CEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A0149F5-8983-4FA9-AF6C-19349EE65CEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A0149F5-8983-4FA9-AF6C-19349EE65CEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A0149F5-8983-4FA9-AF6C-19349EE65CEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D27776D8-4034-45C6-92A0-C02CDE886A15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D27776D8-4034-45C6-92A0-C02CDE886A15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D27776D8-4034-45C6-92A0-C02CDE886A15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D27776D8-4034-45C6-92A0-C02CDE886A15}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4FED634C-5911-457C-B9BB-167547E46DB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4FED634C-5911-457C-B9BB-167547E46DB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4FED634C-5911-457C-B9BB-167547E46DB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4FED634C-5911-457C-B9BB-167547E46DB6}.Release|Any CPU.Build.0 = Release|Any CPU
+	GlobalSection(NestedProjects) = preSolution
+		{0A0149F5-8983-4FA9-AF6C-19349EE65CEF} = {5CE335C2-D754-046B-83EC-6C4A18029330}
+		{D27776D8-4034-45C6-92A0-C02CDE886A15} = {FFA71E88-89B1-1937-D83D-0FD0D35D6019}
 	EndGlobalSection
 EndGlobal
