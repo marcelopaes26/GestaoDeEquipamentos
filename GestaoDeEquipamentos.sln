@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoDeEquipamentos", "Ges
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoDeEquipamentos.Dominio", "2. Domínio\GestaoDeEquipamentos\GestaoDeEquipamentos.Dominio.csproj", "{D27776D8-4034-45C6-92A0-C02CDE886A15}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoDeEquipamentos.Infraestrutura.Arquivos", "3. Infraestrutura\ClassLibrary1\GestaoDeEquipamentos.Infraestrutura.Arquivos.csproj", "{F79B5BDB-CFA8-4774-8B28-293599C64FC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoDeEquipamentos.Infraestrutura.Memoria", "3. Infraestrutura\ClassLibrary2\GestaoDeEquipamentos.Infraestrutura.Memoria.csproj", "{7CE3A088-B5E4-4F6F-BE8A-FBC6CC2EFCD3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{D27776D8-4034-45C6-92A0-C02CDE886A15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D27776D8-4034-45C6-92A0-C02CDE886A15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D27776D8-4034-45C6-92A0-C02CDE886A15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F79B5BDB-CFA8-4774-8B28-293599C64FC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F79B5BDB-CFA8-4774-8B28-293599C64FC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F79B5BDB-CFA8-4774-8B28-293599C64FC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F79B5BDB-CFA8-4774-8B28-293599C64FC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CE3A088-B5E4-4F6F-BE8A-FBC6CC2EFCD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CE3A088-B5E4-4F6F-BE8A-FBC6CC2EFCD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CE3A088-B5E4-4F6F-BE8A-FBC6CC2EFCD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CE3A088-B5E4-4F6F-BE8A-FBC6CC2EFCD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -34,5 +46,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{0A0149F5-8983-4FA9-AF6C-19349EE65CEF} = {5CE335C2-D754-046B-83EC-6C4A18029330}
 		{D27776D8-4034-45C6-92A0-C02CDE886A15} = {FFA71E88-89B1-1937-D83D-0FD0D35D6019}
+		{F79B5BDB-CFA8-4774-8B28-293599C64FC0} = {902C5020-ED5E-36B7-676D-3CA3BD53E0D0}
+		{7CE3A088-B5E4-4F6F-BE8A-FBC6CC2EFCD3} = {902C5020-ED5E-36B7-676D-3CA3BD53E0D0}
 	EndGlobalSection
 EndGlobal
