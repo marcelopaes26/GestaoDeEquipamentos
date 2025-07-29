@@ -12,4 +12,8 @@
     <ProjectReference Include="..\..\3. Infraestrutura\ClassLibrary1\GestaoDeEquipamentos.Infraestrutura.Arquivos.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
 </Project>
