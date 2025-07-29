@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "GestaoDeEquipamentos.Infraestrutura.Memoria/1.0.0": {
+        "dependencies": {
+          "GestaoDeEquipamentos.Dominio": "1.0.0"
+        },
+        "runtime": {
+          "GestaoDeEquipamentos.Infraestrutura.Memoria.dll": {}
+        }
+      },
+      "GestaoDeEquipamentos.Dominio/1.0.0": {
+        "runtime": {
+          "GestaoDeEquipamentos.Dominio.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GestaoDeEquipamentos.Infraestrutura.Memoria/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GestaoDeEquipamentos.Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -7,4 +7,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\2. Domínio\GestaoDeEquipamentos\GestaoDeEquipamentos.Dominio.csproj" />
+    <ProjectReference Include="..\3. Infraestrutura\ClassLibrary1\GestaoDeEquipamentos.Infraestrutura.Arquivos.csproj" />
+    <ProjectReference Include="..\3. Infraestrutura\ClassLibrary2\GestaoDeEquipamentos.Infraestrutura.Memoria.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ModuloChamado\" />
+  </ItemGroup>
+
 </Project>

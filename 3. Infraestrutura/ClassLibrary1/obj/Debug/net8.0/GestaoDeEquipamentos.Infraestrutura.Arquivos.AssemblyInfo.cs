@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GestaoDeEquipamentos.Infraestrutura.Arquivos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c42b12522dabe6f2cdba3c2b80aa18b7afc46b4a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eee61dc59da5223015ebade8efb9a58d65276a11")]
 [assembly: System.Reflection.AssemblyProductAttribute("GestaoDeEquipamentos.Infraestrutura.Arquivos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GestaoDeEquipamentos.Infraestrutura.Arquivos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

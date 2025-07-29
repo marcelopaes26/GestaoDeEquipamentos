@@ -1,11 +1,68 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "GestaoDeEquipamentos.Dominio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GestaoDeEquipamentos.Dominio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GestaoDeEquipamentos.Dominio.dll": {}
+        }
+      },
+      "GestaoDeEquipamentos.Infraestrutura.Arquivos/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GestaoDeEquipamentos.Dominio": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/GestaoDeEquipamentos.Infraestrutura.Arquivos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GestaoDeEquipamentos.Infraestrutura.Arquivos.dll": {}
+        }
+      },
+      "GestaoDeEquipamentos.Infraestrutura.Memoria/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GestaoDeEquipamentos.Dominio": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/GestaoDeEquipamentos.Infraestrutura.Memoria.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GestaoDeEquipamentos.Infraestrutura.Memoria.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "GestaoDeEquipamentos.Dominio/1.0.0": {
+      "type": "project",
+      "path": "../2. Domínio/GestaoDeEquipamentos/GestaoDeEquipamentos.Dominio.csproj",
+      "msbuildProject": "../2. Domínio/GestaoDeEquipamentos/GestaoDeEquipamentos.Dominio.csproj"
+    },
+    "GestaoDeEquipamentos.Infraestrutura.Arquivos/1.0.0": {
+      "type": "project",
+      "path": "../3. Infraestrutura/ClassLibrary1/GestaoDeEquipamentos.Infraestrutura.Arquivos.csproj",
+      "msbuildProject": "../3. Infraestrutura/ClassLibrary1/GestaoDeEquipamentos.Infraestrutura.Arquivos.csproj"
+    },
+    "GestaoDeEquipamentos.Infraestrutura.Memoria/1.0.0": {
+      "type": "project",
+      "path": "../3. Infraestrutura/ClassLibrary2/GestaoDeEquipamentos.Infraestrutura.Memoria.csproj",
+      "msbuildProject": "../3. Infraestrutura/ClassLibrary2/GestaoDeEquipamentos.Infraestrutura.Memoria.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "GestaoDeEquipamentos.Dominio >= 1.0.0",
+      "GestaoDeEquipamentos.Infraestrutura.Arquivos >= 1.0.0",
+      "GestaoDeEquipamentos.Infraestrutura.Memoria >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Marcelo\\.nuget\\packages\\": {}
@@ -31,7 +88,17 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Marcelo\\OneDrive\\Documentos\\Academia do Programador\\GestaoDeEquipamentos\\2. Domínio\\GestaoDeEquipamentos\\GestaoDeEquipamentos.Dominio.csproj": {
+              "projectPath": "C:\\Users\\Marcelo\\OneDrive\\Documentos\\Academia do Programador\\GestaoDeEquipamentos\\2. Domínio\\GestaoDeEquipamentos\\GestaoDeEquipamentos.Dominio.csproj"
+            },
+            "C:\\Users\\Marcelo\\OneDrive\\Documentos\\Academia do Programador\\GestaoDeEquipamentos\\3. Infraestrutura\\ClassLibrary1\\GestaoDeEquipamentos.Infraestrutura.Arquivos.csproj": {
+              "projectPath": "C:\\Users\\Marcelo\\OneDrive\\Documentos\\Academia do Programador\\GestaoDeEquipamentos\\3. Infraestrutura\\ClassLibrary1\\GestaoDeEquipamentos.Infraestrutura.Arquivos.csproj"
+            },
+            "C:\\Users\\Marcelo\\OneDrive\\Documentos\\Academia do Programador\\GestaoDeEquipamentos\\3. Infraestrutura\\ClassLibrary2\\GestaoDeEquipamentos.Infraestrutura.Memoria.csproj": {
+              "projectPath": "C:\\Users\\Marcelo\\OneDrive\\Documentos\\Academia do Programador\\GestaoDeEquipamentos\\3. Infraestrutura\\ClassLibrary2\\GestaoDeEquipamentos.Infraestrutura.Memoria.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

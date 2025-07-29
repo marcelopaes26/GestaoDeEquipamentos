@@ -1,11 +1,14 @@
+using GestaoDeEquipamentos.Dominio.Compartilhado;
+using GestaoDeEquipamentos.Infraestrutura.Compartilhado;
+
 namespace GestaoDeEquipamentos.ConsoleApp.Compartilhado;
 
 public abstract class TelaBase<T> where T : EntidadeBase<T>
 {
     protected string nomeEntidade;
-    private RepositorioBase<T> repositorio;
+    private RepositorioBaseEmArquivo<T> repositorio;
 
-    protected TelaBase(string nomeEntidade, RepositorioBase<T> repositorio)
+    protected TelaBase(string nomeEntidade, RepositorioBaseEmArquivo<T> repositorio)
     {
         this.nomeEntidade = nomeEntidade;
         this.repositorio = repositorio;
